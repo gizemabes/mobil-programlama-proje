@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Decimal Conversion Options -->
+    <string-array name="decimal_conversion_options">
+        <item>İkilik Taban</item>
+        <item>Sekizlik Taban</item>
+        <item>On Altılık Taban</item>
+        <!-- Dönüşüm seçeneklerini buraya ekleyin -->
+    </string-array>
+
+    <!-- MegaByte Conversion Options -->
+    <string-array name="megabyte_conversion_options">
+        <item>Kilobyte</item>
+        <item>Byte</item>
+        <item>Kibibyte</item>
+        <item>Bit</item>
+        <!-- Dönüşüm seçeneklerini buraya ekleyin -->
+    </string-array>
+
+    <!-- Celsius Conversion Options -->
+    <string-array name="celsius_conversion_options">
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+        <!-- Dönüşüm seçeneklerini buraya ekleyin -->
+    </string-array>
+</resources>

@@ -1,0 +1,166 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Onluk Tabanında Sayı Girişi -->
+    <EditText
+        android:id="@+id/editTextInputDecimal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginRight="2dp"
+        android:hint="Decimal Sayı Giriniz"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColor="#1d1716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/edittext"/>
+
+    <!-- Spinner for Decimal Conversion -->
+    <Spinner
+        android:id="@+id/spinnerDecimal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editTextInputDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Dönüştürme Butonu -->
+    <Button
+        android:id="@+id/buttonConvertDecimal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Dönüştür"
+        android:layout_marginTop="16dp"
+        android:textColor="#fdb44b"
+        android:background="@drawable/button_background"
+        app:layout_constraintTop_toBottomOf="@id/spinnerDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+       />
+
+    <!-- Sonuçların Görüntülendiği TextView -->
+    <TextView
+        android:id="@+id/textViewDecimalResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#fdb44b"
+        app:layout_constraintTop_toBottomOf="@id/buttonConvertDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- MegaByte Girişi -->
+    <EditText
+        android:id="@+id/editTextInputMegaByte"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:hint="Byte Giriniz"
+        android:inputType="number"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewDecimalResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/edittext"/>
+
+    <!-- Spinner for MegaByte Conversion -->
+    <Spinner
+        android:id="@+id/spinnerMegaByte"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editTextInputMegaByte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Dönüştürme Butonu -->
+    <Button
+        android:id="@+id/buttonConvertMegaByte"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Dönüştür"
+        android:layout_marginTop="16dp"
+        android:textColor="#fdb44b"
+        android:background="@drawable/button_background"
+        app:layout_constraintTop_toBottomOf="@id/spinnerMegaByte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+       />
+
+    <!-- Sonuçların Görüntülendiği TextView -->
+    <TextView
+        android:id="@+id/textViewMegaByteResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#fdb44b"
+        app:layout_constraintTop_toBottomOf="@id/buttonConvertMegaByte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Sıcaklık Girişi -->
+    <EditText
+        android:id="@+id/editTextInputCelcius"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:hint="Sıcaklık Giriniz (Celcius)"
+        android:inputType="number"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewMegaByteResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/edittext"/>
+
+    <!-- Spinner for Celsius Conversion -->
+    <Spinner
+        android:id="@+id/spinnerCelcius"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editTextInputCelcius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Dönüştürme Butonu -->
+    <Button
+        android:id="@+id/buttonConvertCelcius"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Dönüştür"
+        android:layout_marginTop="16dp"
+        android:textColor="#fdb44b"
+        android:background="@drawable/button_background"
+        app:layout_constraintTop_toBottomOf="@id/spinnerCelcius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+       />
+
+    <!-- Sonuçların Görüntülendiği TextView -->
+    <TextView
+        android:id="@+id/textViewCelciusResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#fdb44b"
+        app:layout_constraintTop_toBottomOf="@id/buttonConvertCelcius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

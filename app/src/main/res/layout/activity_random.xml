@@ -1,0 +1,77 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/barCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="2dp"
+            android:hint="Adet giriniz"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@drawable/edittext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewDecimalResult" />
+        <!-- Minimum Value Edit Text -->
+        <EditText
+            android:id="@+id/minEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="2dp"
+            android:hint="Minimum değer giriniz"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@drawable/edittext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barCount" />
+
+        <!-- Maximum Value Edit Text -->
+        <EditText
+            android:id="@+id/maxEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="2dp"
+            android:hint="Maximum değer giriniz"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@drawable/edittext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/minEditText" />
+
+
+        <!-- Dönüştürme Butonu -->
+        <Button
+            android:id="@+id/barCountButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="2dp"
+            android:text="Randrom Generator"
+            android:textColor="#fdb44b"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barCount" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
